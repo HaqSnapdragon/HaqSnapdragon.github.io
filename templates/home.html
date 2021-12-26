@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}Frivolous_statistics{% endblock %}
+
+{% block content %}
+    <p>Введите сслыку кинопоиска</p>
+    <form action="{{ url_for('hello_world') }}" method="post">
+        <p><label for="url">url: </label>
+            <input type="text" name="url" value="" required>
+        </p>
+        <input type="submit">
+    </form>
+    <br>
+    {% if answer %}
+        <p>{{ answer }}</p>
+    {% endif %}
+{% endblock %}
+

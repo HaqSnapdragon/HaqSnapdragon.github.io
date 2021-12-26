@@ -1,0 +1,49 @@
+body {
+margin: 0;
+padding: 0;
+font: 14pt Calibri, Verdana;
+color: #444;
+}
+
+.menu {
+float: right;
+margin-top: 8px;
+}
+.menu li {
+display: inline;
+}
+.menu li + li {
+margin-left: 35px;
+}
+.menu li a {
+color: yellow;
+text-decoration: none;
+text-shadow: 0px 0px 0px black;
+}
+
+header {
+background: rgb(10, 72, 150);
+font-style: italic;
+height: 40px;
+width: 100%;
+opacity: .9;
+margin-bottom: 10px;
+}
+header h1.logo {
+margin: 0;
+font-size: 1.5em;
+color: #E6E6FA;
+float: left;
+text-shadow: 1px 1px 2px black;
+}
+
+header h1.logo:hover {
+color: #fff;
+text-decoration: none;
+text-shadow: 1px 1px 2px black;
+}
+.container {
+width: 70%;
+margin: 0 auto;
+}
+

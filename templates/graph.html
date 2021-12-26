@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Plot{% endblock %}
+
+{% block content %}
+    {% if answer %}
+        <p>{{ answer }}</p>
+    {% endif %}
+    <img src="data:image/png;base64, {{ picture }}">
+{% endblock %}

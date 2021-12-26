@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Статистика с сайта kinopoisk</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="{{ url_for('hello_world') }}">Главная</a></li>
+                <li><a href="{{ url_for('about') }}">Справка</a></li>
+                <li><a href="{{ url_for('plot') }}">График</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
